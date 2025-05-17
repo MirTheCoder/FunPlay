@@ -10,7 +10,7 @@ def Game2():
     player1 = pygame.Rect((0, 250, 25, 100))
     player2 = pygame.Rect((775, 250, 25, 100))
     line = pygame.Rect((387.5,0, 25, 600))
-    pygame.mixer.music.load("Unleashed.mp3")
+    pygame.mixer.music.load("sounds/Unleashed.mp3")
     pygame.mixer.music.set_volume(0.8)
     pygame.mixer.music.play(loops=-1, start=0.0)
     font = pygame.font.Font(None, 64)

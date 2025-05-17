@@ -22,13 +22,13 @@ def Game1():
 
 
     player = pygame.Rect((200, 125, 25, 25))
-    pygame.mixer.music.load(r"/Code Play/GamerGuide/sounds/Unleashed.mp3")
+    pygame.mixer.music.load(r"sounds/Unleashed.mp3")
     pygame.mixer.music.set_volume(0.8)
     pygame.mixer.music.play(loops=-1, start=0.0)
     # Ball settings
-    sound = pygame.mixer.Sound(r"/Code Play/GamerGuide/sounds/uh_oh.mp3")
+    sound = pygame.mixer.Sound(r"sounds/uh_oh.mp3")
     sound.set_volume(0.25)
-    sound2 = pygame.mixer.Sound(r"/Code Play/GamerGuide/sounds/Voice3.mp3")
+    sound2 = pygame.mixer.Sound(r"sounds/Voice3.mp3")
     sound2.set_volume(0.25)
 
 
@@ -227,7 +227,7 @@ def Game2():
     player1 = pygame.Rect((0, 250, 25, 100))
     player2 = pygame.Rect((775, 250, 25, 100))
     line = pygame.Rect((387.5,0, 25, 600))
-    pygame.mixer.music.load(r"/Code Play/GamerGuide/sounds/Unleashed.mp3")
+    pygame.mixer.music.load(r"sounds/Unleashed.mp3")
     pygame.mixer.music.set_volume(0.8)
     pygame.mixer.music.play(loops=-1, start=0.0)
     font = pygame.font.Font(None, 64)
@@ -424,10 +424,10 @@ def Game3():
 
     # Load and scale image
     pic1 = pygame.image.load(
-        r"/Code Play/GamerGuide/images/cannon-removebg-preview.png")
+        r"images/cannon-removebg-preview.png")
     resized1 = pygame.transform.scale(pic1, (200, 150))
     pic2 = pygame.image.load(
-        r"/Code Play/GamerGuide/images/rocketShip-removebg-preview.png")
+        r"images/rocketShip-removebg-preview.png")
     resized2 = pygame.transform.scale(pic2, (100, 80))
     resized3 = pygame.transform.scale(pic2, (50, 50))
     resized4 = pygame.transform.scale(pic2, (50, 50))
@@ -602,12 +602,12 @@ def Game3():
             while waiting_for_input:
                 for event in pygame.event.get():
                     if event.type == pygame.QUIT:
-                        run = False
                         waiting_for_input = False
+                        Game3()
                     if event.type == pygame.KEYDOWN:
                         if event.key == pygame.K_y:
                             waiting_for_input = False
-                            run = False
+                            run = True
                         elif event.key == pygame.K_n:
                             run = False
                             waiting_for_input = False
@@ -629,16 +629,16 @@ def main():
     mun = pygame.font.Font(None, 64)
 
     # Load and resize images
-    image1 = pygame.image.load(r"/Code Play/GamerGuide/images/Game1_Image.png")
+    image1 = pygame.image.load(r"images/Game1_Image.png")
     resized1 = pygame.transform.scale(image1, (200, 150))
 
-    image2 = pygame.image.load(r"/Code Play/GamerGuide/images/Game2_Image.png")
+    image2 = pygame.image.load(r"images/Game2_Image.png")
     resized2 = pygame.transform.scale(image2, (200, 150))
 
-    image3 = pygame.image.load(r"/Code Play/GamerGuide/images/Game2_Image.png")
+    image3 = pygame.image.load(r"images/Game2_Image.png")
     resized3 = pygame.transform.scale(image3, (200,150))
 
-    image4 = pygame.image.load(r"/Code Play/GamerGuide/images/Game_3_Image.png")
+    image4 = pygame.image.load(r"images/Game_3_Image.png")
     resized4 = pygame.transform.scale(image4, (189,130))
 
     text = mun.render('RETRO WORLD', True, white)

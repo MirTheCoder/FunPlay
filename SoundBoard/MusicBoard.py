@@ -16,19 +16,19 @@ square2 = pygame.Rect((260, 180, 50, 50))
 square3 = pygame.Rect((350, 180, 50, 50))
 square4 = pygame.Rect((440, 180, 50, 50))
 square5 = pygame.Rect((530, 180, 50, 50))
-square = pygame.Rect((620,180,50,50))
-square6 = pygame.Rect((170, 270, 50, 50))
-square7 = pygame.Rect((260, 270, 50, 50))
-square8 = pygame.Rect((350, 270, 50, 50))
-square9 = pygame.Rect((440, 270, 50, 50))
-square10 = pygame.Rect((530, 270, 50, 50))
-square11 = pygame.Rect((620, 270, 50, 50))
-square12 = pygame.Rect((170, 360, 50, 50))
-square13 = pygame.Rect((260, 360, 50, 50))
-square14 = pygame.Rect((350, 360, 50, 50))
-square15 = pygame.Rect((440, 360, 50, 50))
-square16 = pygame.Rect((530, 360, 50, 50))
-square17 = pygame.Rect((620, 360, 50, 50))
+square6 = pygame.Rect((620,180,50,50))
+square7 = pygame.Rect((170, 270, 50, 50))
+square8 = pygame.Rect((260, 270, 50, 50))
+square9 = pygame.Rect((350, 270, 50, 50))
+square10 = pygame.Rect((440, 270, 50, 50))
+square11 = pygame.Rect((530, 270, 50, 50))
+square12 = pygame.Rect((620, 270, 50, 50))
+square13 = pygame.Rect((170, 360, 50, 50))
+square14 = pygame.Rect((260, 360, 50, 50))
+square15 = pygame.Rect((350, 360, 50, 50))
+square16 = pygame.Rect((440, 360, 50, 50))
+square17 = pygame.Rect((530, 360, 50, 50))
+square18 = pygame.Rect((620, 360, 50, 50))
 sound1 = pygame.mixer.Sound(r"soundEffects/Voice1.mp3")
 sound2 = pygame.mixer.Sound(r"soundEffects/Voice2.mp3")
 sound3 = pygame.mixer.Sound(r"soundEffects/Voice3.mp3")
@@ -37,6 +37,12 @@ sound5 = pygame.mixer.Sound(r"soundEffects/Voice5.mp3")
 sound6 = pygame.mixer.Sound(r"soundEffects/voice6.mp3")
 sound7 = pygame.mixer.Sound(r"soundEffects/voice7.mp3")
 sound8 = pygame.mixer.Sound(r"soundEffects/voice8.mp3")
+sound9 = pygame.mixer.Sound(r"soundEffects/Bite.mp3")
+sound10 = pygame.mixer.Sound(r"soundEffects/Break_Bread.mp3")
+sound11 = pygame.mixer.Sound(r"soundEffects/NoNoNo.mp3")
+sound12 = pygame.mixer.Sound(r"soundEffects/SmoothMiracle.mp3")
+sound13 = pygame.mixer.Sound(r"soundEffects/BossMan.mp3")
+sound14 = pygame.mixer.Sound(r"soundEffects/Sup.mp3")
 run = True
 
 while run:
@@ -49,7 +55,6 @@ while run:
     pygame.draw.rect(screen, red, square6)
     pygame.draw.rect(screen, red, square7)
     pygame.draw.rect(screen, red, square8)
-    pygame.draw.rect(screen, red, square)
     pygame.draw.rect(screen, red, square9)
     pygame.draw.rect(screen, red, square10)
     pygame.draw.rect(screen, red, square11)
@@ -59,6 +64,7 @@ while run:
     pygame.draw.rect(screen, red, square15)
     pygame.draw.rect(screen, red, square16)
     pygame.draw.rect(screen, red, square17)
+    pygame.draw.rect(screen, red, square18)
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             run = False
@@ -80,15 +86,33 @@ while run:
             if square5.collidepoint(mouse_x,mouse_y):
                 pygame.mixer.stop()
                 sound5.play()
-            if square.collidepoint(mouse_x,mouse_y):
-                pygame.mixer.stop()
-                sound6.play()
             if square6.collidepoint(mouse_x,mouse_y):
                 pygame.mixer.stop()
-                sound7.play()
+                sound6.play()
             if square7.collidepoint(mouse_x,mouse_y):
                 pygame.mixer.stop()
+                sound7.play()
+            if square8.collidepoint(mouse_x,mouse_y):
+                pygame.mixer.stop()
                 sound8.play()
+            if square9.collidepoint(mouse_x,mouse_y):
+                pygame.mixer.stop()
+                sound9.play()
+            if square10.collidepoint(mouse_x,mouse_y):
+                pygame.mixer.stop()
+                sound10.play()
+            if square11.collidepoint(mouse_x,mouse_y):
+                pygame.mixer.stop()
+                sound11.play()
+            if square12.collidepoint(mouse_x,mouse_y):
+                pygame.mixer.stop()
+                sound12.play()
+            if square13.collidepoint(mouse_x,mouse_y):
+                pygame.mixer.stop()
+                sound13.play()
+            if square14.collidepoint(mouse_x,mouse_y):
+                pygame.mixer.stop()
+                sound14.play()
 
 
     pygame.display.update()
