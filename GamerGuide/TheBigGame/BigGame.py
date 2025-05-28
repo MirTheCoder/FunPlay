@@ -424,10 +424,10 @@ def Game3():
 
     # Load and scale image
     pic1 = pygame.image.load(
-        r"../images/cannon-removebg-preview.png")
+        r"images/cannon-removebg-preview.png")
     resized1 = pygame.transform.scale(pic1, (200, 150))
     pic2 = pygame.image.load(
-        r"../images/rocketShip-removebg-preview.png")
+        r"images/rocketShip-removebg-preview.png")
     resized2 = pygame.transform.scale(pic2, (100, 80))
     resized3 = pygame.transform.scale(pic2, (50, 50))
     resized4 = pygame.transform.scale(pic2, (50, 50))
@@ -629,16 +629,16 @@ def main():
     mun = pygame.font.Font(None, 64)
 
     # Load and resize images
-    image1 = pygame.image.load(r"../images/Game1_Image.png")
+    image1 = pygame.image.load(r"images/Game1_Image.png")
     resized1 = pygame.transform.scale(image1, (200, 150))
 
-    image2 = pygame.image.load(r"../images/Game2_Image.png")
+    image2 = pygame.image.load(r"images/Game2_Image.png")
     resized2 = pygame.transform.scale(image2, (200, 150))
 
-    image3 = pygame.image.load(r"../images/Game2_Image.png")
+    image3 = pygame.image.load(r"images/Game2_Image.png")
     resized3 = pygame.transform.scale(image3, (200,150))
 
-    image4 = pygame.image.load(r"../images/Game_3_Image.png")
+    image4 = pygame.image.load(r"images/Game_3_Image.png")
     resized4 = pygame.transform.scale(image4, (189,130))
 
     text = mun.render('RETRO WORLD', True, white)
