@@ -5,7 +5,8 @@ pygame.mixer.init()
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
 pygame.display.set_caption("SoundBoard")
-icon = pygame.image.load("images/spaceship.png")
+icon = pygame.image.load("mixer.png")
+pygame.display.set_icon(icon)
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 white = (255, 255, 255)
 green = (0, 255, 0)
