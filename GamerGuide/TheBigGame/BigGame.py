@@ -22,13 +22,13 @@ def Game1():
 
 
     player = pygame.Rect((200, 125, 25, 25))
-    pygame.mixer.music.load(r"../sounds/Unleashed.mp3")
+    pygame.mixer.music.load(r"sounds/Unleashed.mp3")
     pygame.mixer.music.set_volume(0.8)
     pygame.mixer.music.play(loops=-1, start=0.0)
     # Ball settings
-    sound = pygame.mixer.Sound(r"../sounds/uh_oh.mp3")
+    sound = pygame.mixer.Sound(r"sounds/uh_oh.mp3")
     sound.set_volume(0.25)
-    sound2 = pygame.mixer.Sound(r"../sounds/Voice3.mp3")
+    sound2 = pygame.mixer.Sound(r"sounds/Voice3.mp3")
     sound2.set_volume(0.25)
 
 
@@ -227,7 +227,7 @@ def Game2():
     player1 = pygame.Rect((0, 250, 25, 100))
     player2 = pygame.Rect((775, 250, 25, 100))
     line = pygame.Rect((387.5,0, 25, 600))
-    pygame.mixer.music.load(r"../sounds/Unleashed.mp3")
+    pygame.mixer.music.load(r"sounds/Unleashed.mp3")
     pygame.mixer.music.set_volume(0.8)
     pygame.mixer.music.play(loops=-1, start=0.0)
     font = pygame.font.Font(None, 64)
@@ -411,6 +411,7 @@ def Game3():
     import random
 
     pygame.init()
+
     pygame.mixer.init()
 
     # Constants

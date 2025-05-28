@@ -15,7 +15,7 @@ ball_X = random.choice((100, 700))
 ball_Y = random.choice((100, 500))
 sound = pygame.mixer.Sound("uh_oh.mp3")
 sound.set_volume(0.25)
-sound2 = pygame.mixer.Sound("Voice3.mp3")
+sound2 = pygame.mixer.Sound("sounds/Voice3.mp3")
 sound2.set_volume(0.25)
 
 
